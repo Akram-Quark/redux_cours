@@ -1,5 +1,8 @@
 const redux = require("redux");
 const combineReducers = redux.combineReducers;
+const reduxLogger = require("redux-logger");
+const applyeMidleware = redux.applyMiddleware;
+const logger = reduxLogger.createLogger();
 function bake() {
   return {
     type: "BAKE_CAKE",
@@ -41,9 +44,9 @@ let rootReducer = combineReducers({
   soldreducer,
 });
 const setStore = redux.createStore;
-let store = setStore(rootReducer);
+let store = setStore(rootReducer, applyeMidleware(logger));
 store.getState();
-let unsub = store.subscribe(() => console.log(store.getState()));
+let unsub = store.subscribe(() => {});
 store.dispatch(bake());
 store.dispatch(sel());
 unsub();
