@@ -12,7 +12,7 @@ function CackeContainer({ numberOfCackes, buyCack }) {
 }
 const mapStateToProps = (state) => {
   return {
-    numberOfCackes: state.numberOfCackes,
+    numberOfCackes: state.cake.numberOfCackes,
   };
 };
 const mapDispatchToProps = (dispatch) => {

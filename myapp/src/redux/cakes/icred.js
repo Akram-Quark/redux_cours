@@ -1,5 +1,5 @@
 const iceState = {
-  numbOfice: 100,
+  numbOfice: 200,
 };
 
 const iceCreamReducer = (state = iceState, action) => {
