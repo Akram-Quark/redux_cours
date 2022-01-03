@@ -1,6 +1,7 @@
 const initialState = {
   numberOfCackes: 100,
 };
+
 const cackeReducer = (state = initialState, action) => {
   switch (action.type) {
     case "Buy_Cake":
@@ -12,4 +13,5 @@ const cackeReducer = (state = initialState, action) => {
       return state;
   }
 };
+
 export default cackeReducer;

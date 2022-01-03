@@ -21,3 +21,9 @@ const mapDispatchToProps = (dispatch) => {
   };
 };
 export default connect(mapStateToProps, mapDispatchToProps)(CackeContainer);
+//async recap //
+//cryina actions we reducers
+//1:cryina store actions
+//2:drna lprovider f l app component we 3tinah stor f l props
+//3:rohna ll component ta3na we khdmna l connect
+//async recap //
